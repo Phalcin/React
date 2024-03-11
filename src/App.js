@@ -1,8 +1,8 @@
-
 function App() {
-  return (
-   <h1>Welcome to react js</h1>
-  );
-}
+  return <div>
+    <section className="title-class">Section Tag</section>
+    <article>Article Tag</article>
+  </div>
+} 
 
-export default App;
+export default App  
