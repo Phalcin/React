@@ -1,8 +1,12 @@
+import Add from "./components/Add"
+import Greetings from "./components/Greetings"
+
 function App() {
-  return <div>
-    <section className="title-class">Section Tag</section>
-    <article>Article Tag</article>
-  </div>
+  return <>
+    <Add />
+    <Greetings />
+  </>
+  
 } 
 
 export default App  
