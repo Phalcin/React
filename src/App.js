@@ -1,11 +1,14 @@
-import Add from "./components/Add"
-import Greetings from "./components/Greetings"
+
 
 function App() {
-  return <>
-    <Add />
-    <Greetings />
+  const myName = "Emmanuel Mensah"
+  const multiply = (a,b) => a* b
+  const specialClass = 'simple-class'
+  return (
+  <>
+    <h1>{myName}</h1>
   </>
+  );
   
 } 
 
