@@ -1,16 +1,24 @@
-import User from "./User";
+const Cart = () => {
+  const items = ["Wireless Earbuds", "Power bank", "New SSD", "Hoodies"];
+
+  return (
+    <>
+      <h1>Cart </h1>
+
+      <ul>
+        <h4>Products</h4>
+        {items.map((item) => {
+          <li key={Math.random()}>{item}</li>;
+        })}
+      </ul>
+    </>
+  );
+};
 
 function App() {
   return (
     <>
-      <User
-        name="Emmanuel Mensah"
-        img=""
-        age={18}
-        hobbies={["coding", "reading", "sleeping"]}
-      >
-        <p>Hello i am a child</p>
-      </User>
+      <Cart />
     </>
   );
 }
