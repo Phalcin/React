@@ -1,13 +1,33 @@
 
 
 function App() {
-  const myName = "Emmanuel Mensah"
-  const multiply = (a,b) => a* b
-  const specialClass = 'simple-class'
+const userInfo = [
+  {
+    username : "Emmanuel",
+    email : 'test@gmail.com',
+    location : 'Ghana'
+  },
+  {
+    username : 'John',
+    email : 'test@gmail.com',
+    location : 'UK',
+  },
+  {
+    username : 'Isaac',
+    email : 'test@gmail.com',
+    location : 'America'
+  }
+]
   return (
-  <>
-    <h1>{myName}</h1>
-  </>
+<>
+ {userInfo.map(user => (
+  <ul key={Math.random() * 10}>
+    <li>{user.username}</li>
+    <li>{user.email}</li>
+    <li>{user.location}</li>
+  </ul>
+ ))}
+</>
   );
   
 } 
