@@ -8,7 +8,9 @@ function App() {
         img=""
         age={18}
         hobbies={["coding", "reading", "sleeping"]}
-      />
+      >
+        <p>Hello i am a child</p>
+      </User>
     </>
   );
 }
