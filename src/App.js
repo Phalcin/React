@@ -1,35 +1,16 @@
-
+import User from "./User";
 
 function App() {
-const userInfo = [
-  {
-    username : "Emmanuel",
-    email : 'test@gmail.com',
-    location : 'Ghana'
-  },
-  {
-    username : 'John',
-    email : 'test@gmail.com',
-    location : 'UK',
-  },
-  {
-    username : 'Isaac',
-    email : 'test@gmail.com',
-    location : 'America'
-  }
-]
   return (
-<>
- {userInfo.map(user => (
-  <ul key={Math.random() * 10}>
-    <li>{user.username}</li>
-    <li>{user.email}</li>
-    <li>{user.location}</li>
-  </ul>
- ))}
-</>
+    <>
+      <User
+        name="Emmanuel Mensah"
+        img=""
+        age={18}
+        hobbies={["coding", "reading", "sleeping"]}
+      />
+    </>
   );
-  
-} 
+}
 
-export default App  
+export default App;
