@@ -1,22 +1,23 @@
-const Move = () => {
-  const moveHandler = () => {
-    console.log("Yo what's up");
+import { useState } from "react";
+
+function App() {
+  const [movie, setMovie] = useState({
+    title: "Equalizer 3",
+    ratings: 7,
+  });
+
+  const handleClick = () => {
+    setMovie({
+      ...movie,
+      ratings: 5,
+    });
   };
 
   return (
     <>
-      <p onMouseMove={moveHandler}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est magni modi
-        voluptate non quas, dolore porro ex ratione quasi eum!
-      </p>
-    </>
-  );
-};
-
-function App() {
-  return (
-    <>
-      <Move />
+      <h1>{movie.title}</h1>
+      <p>Ratings : {movie.ratings}</p>
+      <button onClick={handleClick}>Change rating</button>
     </>
   );
 }
