@@ -9,7 +9,7 @@ function App() {
   const handleClick = () => {
     setMovie({
       ...movie,
-      ratings: 6,
+      ratings: 7,
     });
   };
 
