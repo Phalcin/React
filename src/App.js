@@ -1,23 +1,17 @@
-import { useState } from "react";
+import { createContext } from "react";
+import ComponentC from "./ComponentA";
+
+//2. Creating instance of (createContent)
+export const Data = createContext();
 
 function App() {
-  const [movie, setMovie] = useState({
-    title: "Equalizer 3",
-    ratings: 7,
-  });
-
-  const handleClick = () => {
-    setMovie({
-      ...movie,
-      ratings: 2,
-    });
-  };
-
+  const name = "Emmanuel Hexer";
   return (
+    //3. Wrap our component into Provide component
     <>
-      <h1>{movie.title}</h1>
-      <p>Ratings : {movie.ratings}</p>
-      <button onClick={handleClick}>Change rating</button>
+      <Data.Provider value={name}>
+        <ComponentC />
+      </Data.Provider>
     </>
   );
 }
