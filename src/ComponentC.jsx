@@ -5,7 +5,7 @@ const ComponentC = () => {
     <>
       <Data.Consumer>
         {(name) => {
-          return <h3>My nam is: ${name}</h3>;
+          return <h1>My nam is: ${name}</h1>;
         }}
       </Data.Consumer>
     </>
